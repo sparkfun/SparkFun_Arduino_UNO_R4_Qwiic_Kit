@@ -26,10 +26,10 @@ uint16_t offTime = 200;     //The total time to stay off between pulses. Set to 
 void setup() {
   Serial.begin(115200);
   Serial.println("Qwiic button examples");
-  Wire.begin(); //Join I2C bus
+  Wire1.begin(); //Join I2C bus
 
   //check if button will acknowledge over I2C
-  if (button.begin() == false) {
+  if (button.begin(SFE_QWIIC_BUTTON_DEFAULT_ADDRESS, Wire1) == false) {
     Serial.println("Device did not acknowledge! Freezing.");
     while (1);
   }

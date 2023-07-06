@@ -15,11 +15,11 @@ void setup()
     Serial.println("BMA400 Example 1 - Basic Readings I2C");
 
     // Initialize the I2C library
-    Wire.begin();
+    Wire1.begin();
 
     // Check if sensor is connected and initialize
     // Address is optional (defaults to 0x14)
-    while(accelerometer.beginI2C(i2cAddress) != BMA400_OK)
+    while(accelerometer.beginI2C(i2cAddress, Wire1) != BMA400_OK)
     {
         // Not connected, inform user
         Serial.println("Error: BMA400 not connected, check wiring and I2C address!");
@@ -49,6 +49,6 @@ void loop()
     Serial.print("Z: ");
     Serial.println(accelerometer.data.accelZ, 3);
 
-    // Print 50x per second
-    delay(20);
+    // Pause
+    delay(2000);
 }

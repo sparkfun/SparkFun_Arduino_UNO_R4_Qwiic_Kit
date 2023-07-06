@@ -29,9 +29,9 @@ void setup()
   Serial.begin(115200);
   Serial.println("Reading basic values from BME280");
 
-  Wire.begin();
+  //Wire1.begin();
 
-  if (mySensor.beginI2C() == false) //Begin communication over I2C
+  if (mySensor.beginI2C(Wire1) == false) //Begin communication over I2C
   {
     Serial.println("The sensor did not respond. Please check wiring.");
     while(1); //Freeze

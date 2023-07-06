@@ -25,9 +25,9 @@
 // The Library supports three different types of SparkFun boards. The demo uses the following
 // defines to determine which device is being used. Uncomment the device being used for this demo.
 
-QwiicMicroOLED myOLED;
+// QwiicMicroOLED myOLED;
 // QwiicTransparentOLED myOLED;
-// QwiicNarrowOLED myOLED;
+QwiicNarrowOLED myOLED;
 
 
 void setup()
@@ -35,10 +35,10 @@ void setup()
     Serial.begin(115200);
     Serial.println("Running OLED example");
 
-    Wire.begin();
+    Wire1.begin();
 
     // Initalize the OLED device and related graphics system
-    if (myOLED.begin() == false)
+    if (myOLED.begin(Wire1) == false)
     {
         Serial.println("Device begin failed. Freezing...");
         while (true)

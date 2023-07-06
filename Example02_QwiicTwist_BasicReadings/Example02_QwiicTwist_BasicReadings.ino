@@ -25,7 +25,7 @@ void setup()
   Serial.begin(115200);
   Serial.println("Qwiic Twist Example");
 
-  if (twist.begin() == false)
+  if (twist.begin(Wire1) == false)
   {
     Serial.println("Twist does not appear to be connected. Please check wiring. Freezing...");
     while (1)
