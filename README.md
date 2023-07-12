@@ -15,12 +15,12 @@ The SparkFun Arduino UNO R4 WiFi Qwiic Kit is a great way to learn about Arduino
 Repository Contents
 -------------------
 
-* **/Example-01_LEDButton_PulseWhenPressed** - Data sheets, additional product information
-* **/Example-02_QwiicTwist_BasicReadings** - Enclosure files 
-* **/Example-03_QwiicOLED_Hello** - Example code 
-* **/Example-04_LightSensor_Read_Ambient_Basics** - Eagle design files (.brd, .sch)
-* **/Example-05_BMA400BasicReadingsI2C** - Libraries for use with the <PRODUCT NAME>
-* **/Example-06_BasicAtmosphericReadings** - Production panel files (.brd)
+* **/Example-01_LEDButton_PulseWhenPressed**
+* **/Example-02_QwiicTwist_BasicReadings**
+* **/Example-03_QwiicOLED_Hello**
+* **/Example-04_LightSensor_Read_Ambient_Basics**
+* **/Example-05_BMA400BasicReadingsI2C**
+* **/Example-06_BasicAtmosphericReadings**
 
 Documentation
 --------------
